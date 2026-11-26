@@ -1,7 +1,7 @@
 sources:
   - name: bronze
-    database: bronze
-    schema: netflix
+    database: NETFLIX_DB
+    schema: bronze
     tables:
       - name: netflix_titles
       - name: netflix_reviews

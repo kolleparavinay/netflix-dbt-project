@@ -1,8 +1,8 @@
-name: "dbt_core_dataengineer"
+name: "netflix_dbt_project"
 version: "1.0.0"
 config-version: 2
 
-profile: "dbt_core_dataengineer"
+profile: "netflix_dbt_project"
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -16,18 +16,18 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  dbt_core_dataengineer:
+  netflix_dbt_project:
     staging:
-      +catalog: bronze
+      +database: NETFLIX_DB
       +schema: staging
       +materialized: view
 
     silver:
-      +catalog: silver
+      +database: NETFLIX_DB
       +schema: silver
       +materialized: table
 
     gold:
-      +catalog: gold
+      +database: NETFLIX_DB
       +schema: gold
       +materialized: table
