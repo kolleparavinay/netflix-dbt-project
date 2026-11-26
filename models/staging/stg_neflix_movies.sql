@@ -1,6 +1,6 @@
 {{ config(materialized='view') }}
 
-select
+select 
 cast(title AS STRING) as title,
 try_cast(year AS INTEGER) as year,
 cast(certificate AS STRING) as certificate,
