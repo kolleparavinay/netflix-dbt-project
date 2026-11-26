@@ -1,1 +1,1 @@
-need to create a sql script for scd type 2.  
+need to create a sql script for scd type 2.   
